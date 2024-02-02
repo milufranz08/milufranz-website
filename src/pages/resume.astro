@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="resume">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Summary</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I am a dedicated software engineer manager with a strong background in technical leadership, project management, web-based development and cloud infrastructure. I have effectively guided teams in architecting, building, delivering, and maintaining scalable software applications.
+  </div>
+
+  <div class="mb-10 text-justify">
+  Beyond my managerial and technical skills, I am deeply passionate about fostering collaboration and knowledge sharing within the technical community. I actively participate in technical community events, such as meetups, where I can engage with fellow professionals and exchange insights. Furthermore, I enjoy writing technical articles to contribute to the collective learning and growth of the industry.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">My experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Software Engineer Manager - Mile Two LLC"
+      subtitle="2023 - Present"
+    >
+      As the Development Technical Lead, I collaborate closely with the Data and Design teams to build a product that enables resource sharing across directories in the Air Force Research Laboratory (AFRL), enhancing collaboration and minimizing duplication of work. Our project faces the challenge of connecting to multiple data sources at different stages of development while ensuring access is limited to authorized users. We utilize Next.js and React for frontend development and employ Google Apigee as an API gateway to connect to various data sources and feed data into a knowledge graph. Additionally, I manage a team of four individuals, providing mentorship and support for their professional growth.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Engineer - Circulo Health"
+      subtitle="2021 - 2022"
+    >
+      Worked on creating a mobile application using TypeScript and React Native as the frontend. In addition, I worked on developing a REST API using Golang and GORM in conjunction with a PostgreSQL database. Implemented AWS lambdas and step functions to facilitate different tasks such as programmatically finding anomalies in the data, handling it, and notifying our users through SMS and email.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Engineer - Mile Two LLC"
+      subtitle="2018 - 2021"
+    >
+      Developed products and prototypes for both commercial and DoD clients using TypeScript and JavaScript with React as the frontend framework, Apollo/GraphQL as the backend. Collaborated with cross-functional teams to develop and design tools to improve analysts' use of technology to accomplish their missions.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Computer Science Tutor - Franklin University"
+      subtitle="2018 - 2019 "
+    >
+      Worked with students on one-hour sessions to clarify concepts across a variety of Computer Science subjects such as database management, data structures, and algorithms.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Volunteer - Code for Dayton"
+      subtitle="2018"
+    >
+      Collaborated on the creation of an anonymous platform where direct care nurses are able to report instances of compromised patient safety due to inadequate staffing. For this project, I designed the logo, color palette, and wireframes to help the other members of the team keep a consistent look through the site.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">My education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Bachelor of Computer Science"
+      subtitle="2015 to 2018 at Franklin University, Columnbus, Ohio"
+    />
+    <TimeLineElement
+      title="Earned 53 credits toward a Bachelor of Arts in Fine Arts, B.F.A."
+      subtitle="2011 to 2013 at Wright State University, Dayton, Ohio"
+    />
+    <TimeLineElement
+      title="Associate of Applied Science in Visual Communications, A.A.S."
+      subtitle="2009 to 2011 at Sinclair Community College, Dayton, Ohio"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">My skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-3 columns-2 mx-3">
+    <li>Technical Leadership</li>
+    <li>Engineering Management</li>
+    <li>Project Management</li>
+    <li>Software Architecture</li>
+    <li>Web Application Development</li>
+    <li>Next.js</li>
+    <li>React</li>
+    <li>Node.js</li>
+    <li>Docker</li>
+    <li>Terraform</li>
+    <li>JavaScript/TypeScript</li>
+    <li>SASS/CSS</li>
+    <li>HTML</li>
+    <li>Golang</li>
+  </ul>
+</BaseLayout>
